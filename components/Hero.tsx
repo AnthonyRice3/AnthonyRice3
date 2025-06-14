@@ -200,28 +200,28 @@ export default function Hero() {
             style={{ color: colors[200] }}
           >
             <span className="word" data-delay="0">
-              Welcome
+              Welcome 
             </span>
             <span className="word" data-delay="200">
-              to
+              to 
             </span>
             <span className="word" data-delay="400">
-              <b>StackPilot</b>
+              <b>AR3</b>
             </span>
             <span className="word" data-delay="600">
               — 
             </span>
             <span className="word" data-delay="800">
-              Powering
+              My
             </span>
             <span className="word" data-delay="1000">
-              your
+              Name
             </span>
             <span className="word" data-delay="1200">
-              digital
+              is
             </span>
             <span className="word" data-delay="1400">
-              transformation.
+              Anthony Rice III.
             </span>
           </h2>
           <div
@@ -240,22 +240,22 @@ export default function Hero() {
           >
             <div className="mb-4 md:mb-6">
               <span className="word" data-delay="1600">
-                Supercharge
+                i
               </span>
               <span className="word" data-delay="1750">
-                your
+                Do
               </span>
               <span className="word" data-delay="1900">
-                productivity
+                Freelance
               </span>
               <span className="word" data-delay="2050">
-                with
+                Tech
               </span>
               <span className="word" data-delay="2200">
-                AI-driven
+                &
               </span>
               <span className="word" data-delay="2350">
-                automation.
+                Automation.
               </span>
             </div>
             <div
@@ -263,27 +263,27 @@ export default function Hero() {
               style={{ color: colors[200] }}
             >
               <span className="word" data-delay="2600">
-                Integrate,
+                It&apos;s
               </span>
               <span className="word" data-delay="2750">
-                orchestrate,
+                Time
               </span>
               <span className="word" data-delay="2900">
-                and
+                To 
               </span>
               <span className="word" data-delay="3050">
-                scale
+                Turn
               </span>
               <span className="word" data-delay="3200">
-                your
+                Your
               </span>
               <span className="word" data-delay="3350">
-                business
+                Infrastructure
               </span>
               <span className="word" data-delay="3500">
-                — all
+                — DIGITAL
               </span>
-              <span className="word" data-delay="3650">
+              {/* <span className="word" data-delay="3650">
                 in
               </span>
               <span className="word" data-delay="3800">
@@ -294,7 +294,7 @@ export default function Hero() {
               </span>
               <span className="word" data-delay="4100">
                 platform.
-              </span>
+              </span> */}
             </div>
           </h1>
           <div

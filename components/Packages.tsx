@@ -5,9 +5,9 @@ export default function Packages() {
     const plans = [
         {
             name: "Basic plan",
-            buy: "https://buy.stripe.com/test_fZuaEW1Tt0hf3BQcgYcs800",
+            buy: "https://buy.stripe.com/dRmfZgeA24Rx61u3sU24001",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            price: 12,
+            price: 150,
             isMostPop: false,
             features: [
                 "Curabitur faucibus",
@@ -22,9 +22,9 @@ export default function Packages() {
         },
         {
             name: "Startup",
-            buy: "https://buy.stripe.com/test_fZuaEW1Tt0hf3BQcgYcs800",
+            buy: "https://buy.stripe.com/bJe7sKeA22Jp1LebZq24002",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            price: 35,
+            price: 350,
             isMostPop: true,
             features: [
                 "Curabitur faucibus",
@@ -38,9 +38,9 @@ export default function Packages() {
         },
         {
             name: "Enterprise",
-            buy: "https://buy.stripe.com/test_fZuaEW1Tt0hf3BQcgYcs800",
+            buy: "https://buy.stripe.com/aFa7sKdvYes7cpSbZq24003",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            price: 60,
+            price: 550,
             isMostPop: false,
             features: [
                 "Curabitur faucibus",
@@ -56,14 +56,14 @@ export default function Packages() {
 
     return (
         <section className='py-14 bg-white'>
-            <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
+            <div className="max-w-screen-xl mx-auto px-4 text-[#22240c] md:px-8">
                 <div className='relative max-w-xl mx-auto sm:text-center'>
-                    <h3 className='text-gray-800 text-3xl font-semibold sm:text-4xl'>
+                    <h3 className='text-[#22240c] text-3xl font-semibold sm:text-4xl'>
                         Pricing for all sizes
                     </h3>
                     <div className='mt-3 max-w-xl'>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur consequat nunc.
+                            Choose the package that best fits your needs. Whether you are a startup, an established business, or an enterprise, we have a plan for you. Each package is designed to provide the best value and features to help you succeed.
                         </p>
                     </div>
                 </div>
@@ -77,23 +77,23 @@ export default function Packages() {
                                     ) : ""
                                 }
                                 <div className="p-8 space-y-4 border-b">
-                                    <span className='text-slate-600 font-medium'>
+                                    <span className='text-green-700 font-medium'>
                                         {item.name}
                                     </span>
-                                    <div className='text-gray-800 text-3xl font-semibold'>
-                                        ${item.price} <span className="text-xl text-gray-600 font-normal">/mo</span>
+                                    <div className='text-[#22240c] text-3xl font-semibold'>
+                                        ${item.price} <span className="text-xl text-[#22240c] font-normal">/mo</span>
                                     </div>
                                     <p>
                                         {item.desc}
                                     </p>
                                     <Link href={item.buy}>
-                                        <button className='cursor-pointer w-full px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-200'>
+                                        <button className='cursor-pointer w-full px-4 py-2 bg-[#22240c] text-white rounded-md hover:bg-green-700 transition-colors duration-200'>
                                             Buy now
                                         </button>
                                     </Link>
                                 </div>
                                 <ul className='p-8 space-y-3'>
-                                    <li className="pb-2 text-gray-800 font-medium">
+                                    <li className="pb-2 text-[#22240c] font-medium">
                                         <p>Features</p>
                                     </li>
                                     {
@@ -101,7 +101,7 @@ export default function Packages() {
                                             <li key={idx} className='flex items-center gap-5'>
                                                 <svg
                                                     xmlns='http://www.w3.org/2000/svg'
-                                                    className='h-5 w-5 text-slate-600'
+                                                    className='h-5 w-5 text-green-600'
                                                     viewBox='0 0 20 20'
                                                     fill='currentColor'>
                                                     <path

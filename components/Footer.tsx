@@ -71,11 +71,11 @@ export default function Footer () {
     ]
 
     return (
-        <footer className="text-gray-500 bg-white px-4 py-5 max-w-screen-xl mx-auto md:px-8">
+        <footer className="text-gray-500 px-4 py-5 mx-auto md:px-8 bg-black">
             <div className="gap-6 justify-between md:flex">
                 <div className="flex-1">
                     <div className="max-w-xs">
-                        <Image width={150} height={150} src="/AR3a.jpeg" alt="me" className="w-32" />
+                        <Image width={150} height={150} src="/ar5.jpg" alt="me" className="w-32" />
                         <p className="leading-relaxed mt-2 text-[15px]">
                             Lorem Ipsum has been the industry standard dummy text ever since the 1500s.
                         </p>
@@ -93,7 +93,7 @@ export default function Footer () {
                                 className="w-full p-2.5 outline-none"
                             />
                             <button
-                                className="p-2.5 rounded-md text-white bg-indigo-600 outline-none shadow-md focus:shadow-none sm:px-5"
+                                className="p-2.5 rounded-md text-white bg-[#22240c] outline-none shadow-md focus:shadow-none sm:px-5"
                             >
                                 Subscribe
                             </button>
@@ -107,7 +107,7 @@ export default function Footer () {
                                 className="space-y-4"
                                 key={idx}
                             >
-                                <h4 className="text-gray-800 font-medium">
+                                <h4 className="text-[#22240c] font-medium">
                                     { item.label }
                                 </h4>
                                 {
@@ -115,7 +115,7 @@ export default function Footer () {
                                         <li key={idx}>
                                             <a 
                                                 href={el.href}
-                                                className="hover:underline hover:text-indigo-600"
+                                                className="hover:underline hover:text-[#22240c]"
                                             
                                             >
                                                 { el.name }
@@ -130,7 +130,7 @@ export default function Footer () {
             </div>
             <div className="mt-8 py-6 border-t items-center justify-between sm:flex">
                 <div className="mt-4 sm:mt-0">
-                    &copy; 2022 Float UI All rights reserved.
+                    &copy; 2025 AR3 All rights reserved.
                 </div>
                 <div className="mt-6 sm:mt-0">
                     <ul className="flex items-center space-x-4">

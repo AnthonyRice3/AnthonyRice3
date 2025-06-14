@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className="bg-green-400 text-black dark:bg-black dark:text-white"
+        className="bg-black text-black dark:bg-black dark:text-white"
       >
         <Nav />
         {children}

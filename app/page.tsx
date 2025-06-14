@@ -8,7 +8,7 @@ import { Process } from "@/components/Process";
 
 export default function Home() {
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="bg-black min-h-screen">
     <Hero />
     <AR3 /> 
     <FeatureSection />
