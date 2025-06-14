@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { SmoothCursor } from "./ui/smooth-cursor";
+import { Cursor } from "./ui/Cursor";
 
 const colors = {
   50: "#f8f7f5",
@@ -193,7 +193,7 @@ export default function Hero() {
       <div className="floating-element" style={{ top: "75%", left: "90%", animationDelay: "6.5s" }}></div>
 
       <div className="relative z-10 min-h-screen flex flex-col justify-between items-center px-8 py-12 md:px-16 md:py-20">
-        <SmoothCursor />
+        <Cursor />
         <div className="text-center">
           <h2
             className="text-xs md:text-sm font-mono font-light uppercase tracking-[0.2em] opacity-80"

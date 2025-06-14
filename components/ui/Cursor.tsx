@@ -80,7 +80,7 @@ const DefaultCursorSVG: FC = () => {
   );
 };
 
-export function SmoothCursor({
+export function Cursor({
   cursor = <DefaultCursorSVG />,
   springConfig = {
     damping: 45,
@@ -179,6 +179,35 @@ export function SmoothCursor({
       if (rafId) cancelAnimationFrame(rafId);
     };
   }, [cursorX, cursorY, rotation, scale]);
+
+  const movingClass = isMoving ? "cursor-moving" : "";
+
+return (
+  <motion.div
+    className={movingClass}
+    style={{
+      position: "fixed",
+      left: cursorX,
+      top: cursorY,
+      translateX: "-50%",
+      translateY: "-50%",
+      rotate: rotation,
+      scale: scale,
+      zIndex: 100,
+      pointerEvents: "none",
+      willChange: "transform",
+    }}
+    initial={{ scale: 0 }}
+    animate={{ scale: 1 }}
+    transition={{
+      type: "spring",
+      stiffness: 400,
+      damping: 30,
+    }}
+  >
+    {cursor}
+  </motion.div>
+);
 
   return (
     <motion.div
