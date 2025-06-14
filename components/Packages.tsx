@@ -1,8 +1,11 @@
+import Link from "next/link";
+
 export default function Packages() {
 
     const plans = [
         {
             name: "Basic plan",
+            buy: "https://buy.stripe.com/test_fZuaEW1Tt0hf3BQcgYcs800",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             price: 12,
             isMostPop: false,
@@ -19,6 +22,7 @@ export default function Packages() {
         },
         {
             name: "Startup",
+            buy: "https://buy.stripe.com/test_fZuaEW1Tt0hf3BQcgYcs800",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             price: 35,
             isMostPop: true,
@@ -34,6 +38,7 @@ export default function Packages() {
         },
         {
             name: "Enterprise",
+            buy: "https://buy.stripe.com/test_fZuaEW1Tt0hf3BQcgYcs800",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             price: 60,
             isMostPop: false,
@@ -81,9 +86,11 @@ export default function Packages() {
                                     <p>
                                         {item.desc}
                                     </p>
-                                    <button className='cursor-pointer px-3 py-3 rounded-lg w-full font-semibold text-sm duration-150 text-white bg-slate-950 hover:bg-slate-500 active:bg-slate-700'>
-                                        Buy Now
-                                    </button>
+                                    <Link href={item.buy}>
+                                        <button className='cursor-pointer w-full px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-200'>
+                                            Buy now
+                                        </button>
+                                    </Link>
                                 </div>
                                 <ul className='p-8 space-y-3'>
                                     <li className="pb-2 text-gray-800 font-medium">
