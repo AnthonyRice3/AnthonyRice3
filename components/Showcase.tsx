@@ -11,7 +11,7 @@ export const products = [
     title: "Moonbeam",
     link: "/site1.PNG",
     thumbnail:
-      "/site15.PNG",
+      "/site10.PNG",
   },
   {
     title: "Cursor",
@@ -42,32 +42,32 @@ export const products = [
     title: "Pixel Perfect",
     link: "/site1.PNG",
     thumbnail:
-      "/site10.PNG",
+      "/site11.PNG",
   },
 
   {
     title: "Algochurn",
     link: "/site1.PNG",
     thumbnail:
-      "/site9.PNG",
+      "/site1.PNG",
   },
   {
     title: "Aceternity UI",
     link: "/site1.PNG",
     thumbnail:
-      "/site11.PNG",
+      "/site6.PNG",
   },
   {
     title: "Tailwind Master Kit",
     link: "/site1.PNG",
     thumbnail:
-      "/site1.PNG",
+      "/site9.PNG",
   },
   {
     title: "SmartBridge",
     link: "/site1.PNG",
     thumbnail:
-      "/site6.PNG",
+      "/site15.PNG",
   },
   {
     title: "Renderwork Studio",
@@ -80,7 +80,7 @@ export const products = [
     title: "Creme Digital",
     link: "/site1.PNG",
     thumbnail:
-      "/site12.PNG",
+      "/site5.PNG",
   },
   {
     title: "Golden Bells Academy",
@@ -98,6 +98,6 @@ export const products = [
     title: "E Free Invoice",
     link: "/site1.PNG",
     thumbnail:
-      "/site5.PNG",
+      "/site12.PNG",
   },
 ];

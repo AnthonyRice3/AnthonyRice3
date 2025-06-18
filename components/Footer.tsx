@@ -75,9 +75,9 @@ export default function Footer () {
             <div className="gap-6 justify-between md:flex">
                 <div className="flex-1">
                     <div className="max-w-xs">
-                        <Image width={150} height={150} src="/ar5.jpg" alt="me" className="w-32" />
+                        <Image width={150} height={150} src="/ar5.jpg" alt="me" className="w-32 rounded-xl" />
                         <p className="leading-relaxed mt-2 text-[15px]">
-                            Lorem Ipsum has been the industry standard dummy text ever since the 1500s.
+                            My Name  is Anthony Rice, I am a Full Stack Developer with a passion for creating dynamic and responsive web applications. Leave an email or phone number and I&lsquo;ll reach out.
                         </p>
                     </div>
                     <form 
@@ -89,13 +89,13 @@ export default function Footer () {
                         <div className="max-w-sm flex items-center border rounded-md p-1">
                             <input 
                                 type="email"
-                                placeholder="Enter your email"
+                                placeholder="Enter Your Email or Phone Number"
                                 className="w-full p-2.5 outline-none"
                             />
                             <button
                                 className="p-2.5 rounded-md text-white bg-[#22240c] outline-none shadow-md focus:shadow-none sm:px-5"
                             >
-                                Subscribe
+                                Contact
                             </button>
                         </div>
                     </form>
