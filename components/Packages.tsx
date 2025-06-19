@@ -56,49 +56,49 @@ export default function Packages() {
 
     return (
         <section className='py-14 bg-white'>
-            <div className="max-w-screen-xl mx-auto px-4 text-[#22240c] md:px-8">
+            <div className="max-w-screen-xl mx-auto px-4 text-lime-900 md:px-8">
                 <div className='relative max-w-xl mx-auto sm:text-center'>
-                    <h3 className='text-[#22240c] text-3xl font-semibold sm:text-4xl'>
+                    <h3 className='text-black text-3xl font-semibold sm:text-4xl'>
                         Pricing for all sizes
                     </h3>
-                    <div className='mt-3 max-w-xl'>
+                    <div className='mt-3 max-w-xl text-black'>
                         <p>
                             Choose the package that best fits your needs. Whether you are a startup, an established business, or an enterprise, we have a plan for you. Each package is designed to provide the best value and features to help you succeed.
                         </p>
                     </div>
                 </div>
-                <div className='mt-16 justify-center gap-6 sm:grid sm:grid-cols-2 sm:space-y-0 lg:grid-cols-3'>
+                <div className='mt-16 justify-center gap-6 sm:grid sm:grid-cols-2 sm:space-y-0 lg:grid-cols-3 bg-gradient-to-bl'>
                     {
                         plans.map((item, idx) => (
-                            <div key={idx} className={`relative flex-1 flex items-stretch flex-col rounded-xl border-2 mt-6 sm:mt-0 ${item.isMostPop ? "mt-10" : ""}`}>
+                            <div key={idx} className={`bg-gradient-to-bl from-black via-green-200 to-black relative flex-1 flex items-stretch flex-col rounded-xl border-2 mt-6 sm:mt-0 ${item.isMostPop ? "mt-10" : ""}`}>
                                 {
                                     item.isMostPop ? (
                                         <span className="w-32 absolute -top-5 left-0 right-0 mx-auto px-3 py-2 rounded-full border shadow-md bg-white text-center text-gray-700 text-sm font-semibold">Most popular</span>
                                     ) : ""
                                 }
-                                <div className="p-8 space-y-4 border-b">
-                                    <span className='text-green-700 font-medium'>
+                                <div className="p-8 space-y-4 border-b bg-g">
+                                    <span className='text-black font-medium'>
                                         {item.name}
                                     </span>
-                                    <div className='text-[#22240c] text-3xl font-semibold'>
-                                        ${item.price} <span className="text-xl text-[#22240c] font-normal">/mo</span>
+                                    <div className='text-lime-900 text-3xl font-semibold'>
+                                        ${item.price} <span className="text-xl text-black font-normal">/mo</span>
                                     </div>
-                                    <p>
+                                    <p className="text-black">
                                         {item.desc}
                                     </p>
                                     <Link href={item.buy}>
-                                        <button className='cursor-pointer w-full px-4 py-2 bg-[#22240c] text-white rounded-md hover:bg-green-700 transition-colors duration-200'>
+                                        <button className='cursor-pointer w-full px-4 py-2 bg-black text-white rounded-md hover:bg-green-700 transition-colors duration-200'>
                                             Buy now
                                         </button>
                                     </Link>
                                 </div>
                                 <ul className='p-8 space-y-3'>
-                                    <li className="pb-2 text-[#22240c] font-medium">
+                                    <li className="pb-2 text-lime-900 font-medium">
                                         <p>Features</p>
                                     </li>
                                     {
                                         item.features.map((featureItem, idx) => (
-                                            <li key={idx} className='flex items-center gap-5'>
+                                            <li key={idx} className='flex items-center gap-5 text-black'>
                                                 <svg
                                                     xmlns='http://www.w3.org/2000/svg'
                                                     className='h-5 w-5 text-green-600'

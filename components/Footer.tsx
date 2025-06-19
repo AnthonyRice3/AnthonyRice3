@@ -93,7 +93,7 @@ export default function Footer () {
                                 className="w-full p-2.5 outline-none"
                             />
                             <button
-                                className="p-2.5 rounded-md text-white bg-[#22240c] outline-none shadow-md focus:shadow-none sm:px-5"
+                                className="p-2.5 rounded-md text-white bg-lime-900 outline-none shadow-md focus:shadow-none sm:px-5"
                             >
                                 Contact
                             </button>
@@ -107,7 +107,7 @@ export default function Footer () {
                                 className="space-y-4"
                                 key={idx}
                             >
-                                <h4 className="text-[#22240c] font-medium">
+                                <h4 className="text-lime-900 font-medium">
                                     { item.label }
                                 </h4>
                                 {
@@ -115,7 +115,7 @@ export default function Footer () {
                                         <li key={idx}>
                                             <a 
                                                 href={el.href}
-                                                className="hover:underline hover:text-[#22240c]"
+                                                className="hover:underline hover:text-lime-900"
                                             
                                             >
                                                 { el.name }

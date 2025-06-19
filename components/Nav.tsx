@@ -24,20 +24,20 @@ const navItems: NavItem[] = [
     dropdownItems: [
       {
         name: 'About',
-        href: '/analytics',
+        href: '/Resume',
         description: 'Track your metrics',
       },
       {
         name: 'Skills',
-        href: '/dashboard',
+        href: '/Resume/Skills',
         description: 'Manage your data',
       },
       { name: 'Experience', 
-        href: '/reports', 
+        href: '/Resume/Experience', 
         description: 'Generate insights' 
       },
       { name: 'Projects', 
-        href: '/reports', 
+        href: '/Resume/Projects', 
         description: 'Generate insights' 
       },
     ],

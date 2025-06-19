@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { BentoGrid, BentoGridItem } from "../components/ui/BentoGrid";
 import {
   IconBoxAlignRightFilled,
@@ -67,7 +67,7 @@ const SkeletonOne = () => {
         variants={variants}
         className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-white dark:bg-black"
       >
-        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-[#4a4f1b] to-[#22240c] shrink-0" />
+        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-lime-900 to-[#22240c] shrink-0" />
         <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
       </motion.div>
       <motion.div
@@ -75,60 +75,60 @@ const SkeletonOne = () => {
         className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
       >
         <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
-        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-[#4a4f1b] to-[#22240c] shrink-0" />
+        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-lime-900 to-[#22240c] shrink-0" />
       </motion.div>
       <motion.div
         variants={variants}
         className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 bg-white dark:bg-black"
       >
-        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-[#4a4f1b] to-[#22240c] shrink-0" />
+        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-lime-900 to-[#22240c] shrink-0" />
         <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
       </motion.div>
     </motion.div>
   );
 };
-const SkeletonTwo = () => {
-  const variants = {
-    initial: {
-      width: 0,
-    },
-    animate: {
-      width: "100%",
-      transition: {
-        duration: 0.2,
-      },
-    },
-    hover: {
-      width: ["0%", "100%"],
-      transition: {
-        duration: 2,
-      },
-    },
-  };
-  const arr = new Array(6).fill(0);
-  const [maxWidth, setMaxWidth] = useState("0%");
+// const SkeletonTwo = () => {
+//   const variants = {
+//     initial: {
+//       width: 0,
+//     },
+//     animate: {
+//       width: "100%",
+//       transition: {
+//         duration: 0.2,
+//       },
+//     },
+//     hover: {
+//       width: ["0%", "100%"],
+//       transition: {
+//         duration: 2,
+//       },
+//     },
+//   };
+//   const arr = new Array(6).fill(0);
+//   const [maxWidth, setMaxWidth] = useState("0%");
 
-  useEffect(() => {
-    setMaxWidth(`${Math.random() * 100}%`);
-  }, []);
-  return (
-    <motion.div
-      initial="initial"
-      animate="animate"
-      whileHover="hover"
-      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
-    >
-      {arr.map((_, i) => (
-        <motion.div
-          key={"skelenton-two" + i}
-          variants={variants}
-          style={{ maxWidth }}
-          className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-neutral-100 dark:bg-black w-full h-4"
-        ></motion.div>
-      ))}
-    </motion.div>
-  );
-};
+//   useEffect(() => {
+//     setMaxWidth(`${Math.random() * 100}%`);
+//   }, []);
+//   return (
+//     <motion.div
+//       initial="initial"
+//       animate="animate"
+//       whileHover="hover"
+//       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
+//     >
+//       {arr.map((_, i) => (
+//         <motion.div
+//           key={"skelenton-two" + i}
+//           variants={variants}
+//           style={{ maxWidth }}
+//           className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-neutral-100 dark:bg-black w-full h-4"
+//         ></motion.div>
+//       ))}
+//     </motion.div>
+//   );
+// };
 const SkeletonThree = () => {
   const variants = {
     initial: {
@@ -294,7 +294,7 @@ const SkeletonFive = () => {
         className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
       >
         <p className="text-xs text-black">AnthonyRice3</p>
-        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-[#4a4f1b] to-[#22240c] shrink-0" />
+        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-lime-900 to-[#22240c] shrink-0" />
       </motion.div>
     </motion.div>
   );
@@ -318,7 +318,7 @@ const items = [
         Reliable IT support, infrastructure setup, security, and system optimization solutions.
       </span>
     ),
-    header: <SkeletonTwo />,
+    header: <Image src="/itservice.png" alt="itservice" height={150} width={150} className="rounded-2xl " />,
     className: "md:col-span-1",
     icon: <IconFileBroken className="h-4 w-4 text-black" />,
   },

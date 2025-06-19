@@ -35,7 +35,7 @@ export default function Contact () {
             <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
                 <div className="max-w-lg mx-auto gap-12 justify-between lg:flex lg:max-w-none">
                     <div className="max-w-lg space-y-3">
-                        <h3 className="text-[#22240c] font-semibold">
+                        <h3 className="text-lime-900 font-semibold">
                             Contact
                         </h3>
                         <p className="text-black text-3xl font-semibold sm:text-4xl">
@@ -49,7 +49,7 @@ export default function Contact () {
                                 {
                                     contactMethods.map((item, idx) => (
                                         <li key={idx} className="flex items-center gap-x-3">
-                                            <div className="flex-none text-[#22240c]">
+                                            <div className="flex-none text-lime-900">
                                                 {item.icon}
                                             </div>
                                             <p>{item.contact}</p>
@@ -72,7 +72,7 @@ export default function Contact () {
                                     title="/"
                                     type="text"
                                     required
-                                    className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-[#22240c] shadow-sm rounded-lg"
+                                    className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-lime-900 shadow-sm rounded-lg"
                                 />
                             </div>
                             <div>
@@ -83,7 +83,7 @@ export default function Contact () {
                                     title="/"
                                     type="email"
                                     required
-                                    className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-[#22240c] shadow-sm rounded-lg"
+                                    className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-lime-900 shadow-sm rounded-lg"
                                 />
                             </div>
                             <div>
@@ -94,17 +94,17 @@ export default function Contact () {
                                     title="/"
                                     type="text"
                                     required
-                                    className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-[#22240c] shadow-sm rounded-lg"
+                                    className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-lime-900 shadow-sm rounded-lg"
                                 />
                             </div>
                             <div>
                                 <label className="font-medium">
                                     Message
                                 </label>
-                                <textarea title="/" required className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-[#22240c] shadow-sm rounded-lg"></textarea>
+                                <textarea title="/" required className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-lime-900 shadow-sm rounded-lg"></textarea>
                             </div>
                             <button
-                                className="w-full px-4 py-2 text-white font-medium bg-[#22240c] hover:bg-indigo-500 active:bg-[#22240c] rounded-lg duration-150"
+                                className="w-full px-4 py-2 text-white font-medium bg-lime-900 hover:bg-indigo-500 active:bg-lime-900 rounded-lg duration-150"
                             >
                                 Submit
                             </button>

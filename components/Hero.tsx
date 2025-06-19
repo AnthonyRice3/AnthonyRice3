@@ -4,16 +4,16 @@ import React, { useEffect, useRef, useState } from "react";
 import { Cursor } from "./ui/Cursor";
 
 const colors = {
-  50: "#f8f7f5",
-  100: "#e6e1d7",
-  200: "#c8b4a0",
-  300: "#a89080",
-  400: "#8a7060",
-  500: "#6b5545",
-  600: "#544237",
-  700: "#3c4237",
-  800: "#2a2e26",
-  900: "#1a1d18",
+  50: "#365314",
+  100: "#365314",
+  200: "#BBF7D0",
+  300: "#365314",
+  400: "#365314",
+  500: "#365314",
+  600: "#365314",
+  700: "#365314",
+  800: "#365314",
+  900: "#365314",
 };
 
 export default function Hero() {
@@ -192,7 +192,7 @@ export default function Hero() {
       <div className="floating-element" style={{ top: "40%", left: "10%", animationDelay: "6s" }}></div>
       <div className="floating-element" style={{ top: "75%", left: "90%", animationDelay: "6.5s" }}></div>
 
-      <div className="relative z-10 min-h-screen flex flex-col justify-between items-center px-8 py-12 md:px-16 md:py-20">
+      <div className="relative z-10 min-h-screen flex flex-col justify-between items-center px-8 py-12 md:px-16 md:py-20 pt-18 md:pt-24">
         <Cursor />
         <div className="text-center">
           <h2

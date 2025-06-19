@@ -9,8 +9,8 @@ export default function AR3 () {
                         <Image src="/ar3.jpg" width={350} height={300} className="md:max-w-lg sm:rounded-lg rounded-2xl" alt="" />
                     </div>
                     <div className="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl">
-                        <h3 className="text-[#22240c] text-3xl font-semibold sm:text-4xl">
-                            Professional services
+                        <h3 className="text-lime-900 text-3xl font-semibold sm:text-4xl">
+                            Professional Services
                         </h3>
                         <h1>
                             AR3: Your Partner in High-Performance Web Development

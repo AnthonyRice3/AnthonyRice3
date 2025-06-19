@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Sidebar, SidebarBody, SidebarLink } from "../components/ui/SidebarItems";
+import { Sidebar, SidebarBody, SidebarLink } from "./ui/SidebarItems";
 import {
   IconArrowLeft,
   
@@ -14,7 +14,7 @@ import About from "./About";
 import AboutHeader from "./AboutHeader";
 
 
-export function ResumeSidebar() {
+export function SkillsSidebar() {
   const links = [
     {
       label: "About",
@@ -25,7 +25,7 @@ export function ResumeSidebar() {
     },
     {
       label: "Skills / Tools",
-      href: "#",
+      href: "/Resume/Skills",
       icon: (
         <IconUserBolt className="h-5 w-5 shrink-0 text-green-200 dark:text-neutral-200" />
       ),
