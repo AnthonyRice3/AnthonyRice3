@@ -19,6 +19,7 @@ export default function RHero () {
                         alt="Anthony Rice III Logo"
                         width={200}
                         height={200}
+                        className="z-50"
                     />
                     <h3 className="text-3xl text-white font-semibold md:text-4xl">
                         Welcome to My Virtual Resume. My Name is <span className="text-lime-900">Anthony Rice III</span> I am a Full Stack Developer with <span className="text-lime-900">7+ Years</span> of Experience in Tech. a <span className="text-lime-900">Security+</span> certified developer and cybersecurity professional passionate about building secure, scalable web applications and protecting digital systems from real-world threats. Have a look around and feel free to reach out if you have any questions or would like to <span className="text-lime-900">CONNECT!</span> 

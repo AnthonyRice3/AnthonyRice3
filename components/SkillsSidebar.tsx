@@ -10,29 +10,29 @@ import {
 
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import About from "./About";
-import AboutHeader from "./AboutHeader";
+import { SkillsSection } from "./SkillsSection";
+
 
 
 export function SkillsSidebar() {
   const links = [
     {
       label: "About",
-      href: "/Resume/",
+      href: "/Resume#AboutMe",
       icon: (
         <IconUserBolt className="h-5 w-5 shrink-0 text-green-200 dark:text-neutral-200" />
       ),
     },
     {
       label: "Skills / Tools",
-      href: "/Resume/Skills",
+      href: "/Resume/Skills#SkillsAndTools",
       icon: (
         <IconUserBolt className="h-5 w-5 shrink-0 text-green-200 dark:text-neutral-200" />
       ),
     },
     {
-      label: "Experience",
-      href: "#",
+      label: "Experience / Education",
+      href: "/Resume/Experience#Experience",
       icon: (
         <IconSettings className="h-5 w-5 shrink-0 text-green-200 dark:text-neutral-200" />
       ),
@@ -44,19 +44,12 @@ export function SkillsSidebar() {
         <IconArrowLeft className="h-5 w-5 shrink-0 text-green-200 dark:text-neutral-200" />
       ),
     },
-    {
-      label: "Education",
-      href: "#",
-      icon: (
-        <IconArrowLeft className="h-5 w-5 shrink-0 text-green-200 dark:text-neutral-200" />
-      ),
-    },
   ];
   const [open, setOpen] = useState(false);
   return (
     <div
       className={cn(
-        "mx-auto flex w-full flex-1 flex-col overflow-hidden rounded-md border border-neutral-200 bg-gray-100 md:flex-row dark:border-neutral-700 dark:bg-neutral-800",
+        "mx-auto flex w-full flex-1 flex-col overflow-hidden rounded-md border border-neutral-200 bg-black md:flex-row dark:border-neutral-700 dark:bg-neutral-800",
         "h-[260vh]",
       )}
     >
@@ -90,8 +83,7 @@ export function SkillsSidebar() {
         </SidebarBody>
       </Sidebar>
       <div>
-      <AboutHeader />
-      <About />
+      <SkillsSection />
       </div>
     </div>
   );

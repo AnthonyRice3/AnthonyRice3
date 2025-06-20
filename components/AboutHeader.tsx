@@ -2,9 +2,9 @@
 
 export default function AboutHeader () {
     return (
-        <section className="py-14">
-            <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
-                    <div className="space-y-5 max-w-4xl mx-auto text-center">
+        <section className="py-14 bg-green-950 w-screen">
+            <div className="relative z-10 mx-auto px-4 py-28 md:px-8">
+                    <div className="space-y- mx-auto text-center">
                         <h2 className="text-4xl text-white font-extrabold mx-auto md:text-5xl">
                             Build and scale up your startup with the best tools
                         </h2>
@@ -38,7 +38,8 @@ export default function AboutHeader () {
                         </div>
                     </div>
                 </div>
-                <div className="absolute inset-0 m-auto max-w-xs h-[357px] blur-[118px] sm:max-w-md md:max-w-lg" style={{ background: "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)" }}></div>
+                <div className="absolute -top-20 -left-20 w-72 h-72 bg-lime-900 rounded-full opacity-20 blur-3xl"></div>
+                <div className="absolute -bottom-20 -right-20 w-72 h-72 bg-green-300 rounded-full opacity-20 blur-3xl"></div>
         </section>
     )
 }

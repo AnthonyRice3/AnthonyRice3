@@ -29,11 +29,11 @@ const navItems: NavItem[] = [
       },
       {
         name: 'Skills',
-        href: '/Resume/Skills',
+        href: '/Resume/Skills#SkillsAndTools',
         description: 'Manage your data',
       },
       { name: 'Experience', 
-        href: '/Resume/Experience', 
+        href: '/Resume/Experience#Experience', 
         description: 'Generate insights' 
       },
       { name: 'Projects', 

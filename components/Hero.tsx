@@ -245,9 +245,6 @@ export default function Hero() {
               <span className="word" data-delay="1750">
                 Do
               </span>
-              <span className="word" data-delay="1900">
-                Freelance
-              </span>
               <span className="word" data-delay="2050">
                 Tech
               </span>
