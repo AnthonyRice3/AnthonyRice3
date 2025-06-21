@@ -13,11 +13,18 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
+import SkillsMarquee from "./SkillsMarquee";
+import { Spotlight } from "./ui/spotlight";
 
 
 export function SkillsSection() {
   return (
     <section id="SkillsAndTools" className="bg-black pt-8">
+    <Spotlight
+                    gradientFirst="radial-gradient(68.54% 68.72% at 55.02% 31.46%, #36531420 0, #86EFAC10 50%, hsla(336, 100%, 45%, 0) 80%)"
+                    gradientSecond="radial-gradient(50% 50% at 50% 50%, #36531420 0, #86EFAC10 80%, transparent 100%)"
+                    gradientThird="radial-gradient(50% 50% at 50% 50%, #36531420 0, #86EFAC10 80%, transparent 100%)"
+                />
     <div className="container relative z-10 px-4 text-center md:max-w-4xl md:px-6 lg:max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -69,7 +76,8 @@ export function SkillsSection() {
             />
           </div>
         </motion.div> */}
-      </div>       
+      </div>  
+      <SkillsMarquee />     
     <BentoGrid className="w-screen mx-auto">
       {items.map((item, i) => (
         <BentoGridItem

@@ -39,27 +39,27 @@ const iconComponents = {
 
 const defaultValues: AboutUsProps['values'] = [
   {
-    title: 'Innovation',
+    title: 'Music',
     description:
-      'We constantly push boundaries and explore new possibilities to create cutting-edge solutions.',
+      'In my free time, I enjoy composing, listening to, and exploring a wide range of music genres as a creative outlet.',
     icon: 'Lightbulb',
   },
   {
-    title: 'Collaboration',
+    title: 'Travel',
     description:
-      'We believe in the power of teamwork and diverse perspectives to achieve extraordinary results.',
+      'I have a passion for travel, using it as an opportunity to experience new cultures, gain perspective, and recharge creatively.',
     icon: 'Users',
   },
   {
-    title: 'Excellence',
+    title: 'Fitness',
     description:
-      'We strive for perfection in everything we do, consistently delivering high-quality work.',
+      'I stay committed to fitness through regular training and exercise, valuing both the mental clarity and discipline it builds over time.',
     icon: 'Sparkles',
   },
   {
-    title: 'Impact',
+    title: 'Gaming',
     description:
-      "We measure our success by the positive difference we make in people's lives and businesses.",
+      "I game to relax, connect with friends, and challenge myself. Occcasionally I may have a live stream going it's a fun way to unwind and stay sharp.",
     icon: 'Globe',
   },
 ];
@@ -68,11 +68,11 @@ export default function Interests() {
   const aboutData = {
     title: 'About Us',
     subtitle:
-      'Building the future of web development with beautiful, reusable components.',
+      '',
     mission:
-      'Our mission is to democratize web development by providing high-quality, customizable components that help developers build stunning websites quickly and efficiently.',
+      'I have always been drawn to visual creativity from design and illustration to storytelling, art helps me express ideas beyond words.',
     vision:
-      'We envision a world where creating beautiful websites is accessible to everyone, regardless of their design or development experience.',
+      'I’m fascinated by how technology shapes the world. Whether it’s coding, cybersecurity, or systems thinking, I love solving real problems with it.',
     values: defaultValues,
     className: 'relative overflow-hidden py-20',
   };
@@ -108,16 +108,16 @@ export default function Interests() {
               <BorderBeam
                 duration={8}
                 size={300}
-                className="from-transparent via-primary/40 to-transparent"
+                className="from-transparent via-amber-to-amber-100 to-transparent"
               />
 
-              <div className="mb-6 inline-flex aspect-square h-16 w-16 flex-1 items-center justify-center rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 backdrop-blur-sm">
-                <Rocket className="h-8 w-8 text-primary" />
+              <div className="mb-6 inline-flex aspect-square h-16 w-16 flex-1 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-400 to-amber-200 backdrop-blur-sm">
+                <Rocket className="h-8 w-8 text-amber-to-amber-100" />
               </div>
 
               <div className="space-y-4">
-                <h2 className="mb-4 bg-gradient-to-r from-primary/90 to-primary/70 bg-clip-text text-3xl font-bold text-transparent">
-                  Our Mission
+                <h2 className="mb-4 bg-gradient-to-r from-amber-400/90 to-amber-100 bg-clip-text text-3xl font-bold text-transparent">
+                  ART
                 </h2>
 
                 <p className="text-lg leading-relaxed text-muted-foreground">
@@ -133,15 +133,15 @@ export default function Interests() {
               <BorderBeam
                 duration={8}
                 size={300}
-                className="from-transparent via-blue-500/40 to-transparent"
+                className="from-transparent via-green-300/40 to-transparent"
                 reverse
               />
-              <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500/20 to-blue-500/5 backdrop-blur-sm">
-                <Target className="h-8 w-8 text-blue-500" />
+              <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-green-300/20 to-green-300/5 backdrop-blur-sm">
+                <Target className="h-8 w-8 text-green-300" />
               </div>
 
-              <h2 className="mb-4 bg-gradient-to-r from-blue-500/90 to-blue-500/70 bg-clip-text text-3xl font-bold text-transparent">
-                Our Vision
+              <h2 className="mb-4 bg-gradient-to-r from-green-300/90 to-green-300/70 bg-clip-text text-3xl font-bold text-transparent">
+                TECH
               </h2>
 
               <p className="text-lg leading-relaxed text-muted-foreground">
@@ -160,12 +160,9 @@ export default function Interests() {
             transition={{ duration: 0.6, ease: 'easeOut' }}
             className="mb-12 text-center"
           >
-            <h2 className="bg-gradient-to-r from-foreground/80 via-foreground to-foreground/80 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl">
-              Our Core Values
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-              The principles that guide everything we do and every decision we
-              make.
+            
+            <p className="mx-auto mt-4 max-w-2xl text-2xl text-muted-foreground">
+              Just A Few Things I Enjoy to do In My Free Time!
             </p>
           </motion.div>
 

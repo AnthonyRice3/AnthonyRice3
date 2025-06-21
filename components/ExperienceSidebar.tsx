@@ -39,7 +39,7 @@ export function ExperienceSidebar() {
     },
     {
       label: "Projects / Labs",
-      href: "#",
+      href: "/Resume/Projects#Projects",
       icon: (
         <IconArrowLeft className="h-5 w-5 shrink-0 text-green-200 dark:text-neutral-200" />
       ),

@@ -15,46 +15,47 @@ interface CardProps {
   showGridLines?: boolean;
 }
 
+// All variants use green-300 and green-400 for a unified green theme
 export const VARIANTS = {
   emerald: {
-    accent: 'rose-500',
-    gradient: 'from-rose-500/20 to-rose-500/0',
+    accent: 'green-300',
+    gradient: 'from-green-300/20 to-green-300/0',
     shine:
-      '205deg, transparent 0deg, hsl(160deg 95% 39%) 20deg, hsl(160deg 100% 85% / 0.3) 280deg',
-    border: 'rose-500/20',
-    color: 'rgb(244 63 94)',
+      '205deg, transparent 0deg, hsl(144deg 60% 70%) 20deg, hsl(144deg 60% 85% / 0.3) 280deg',
+    border: 'green-300/20',
+    color: 'rgb(134 239 172)', // Tailwind green-300
   },
   blue: {
-    accent: 'blue-500',
-    gradient: 'from-blue-500/20 to-blue-500/0',
+    accent: 'green-400',
+    gradient: 'from-green-400/20 to-green-400/0',
     shine:
-      '205deg, transparent 0deg, hsl(220deg 95% 39%) 20deg, hsl(220deg 100% 85% / 0.3) 280deg',
-    border: 'blue-500/20',
-    color: 'rgb(244 63 94)',
+      '205deg, transparent 0deg, hsl(144deg 60% 60%) 20deg, hsl(144deg 60% 85% / 0.3) 280deg',
+    border: 'green-400/20',
+    color: 'rgb(74 222 128)', // Tailwind green-400
   },
   purple: {
-    accent: 'purple-500',
-    gradient: 'from-purple-500/20 to-purple-500/0',
+    accent: 'green-300',
+    gradient: 'from-green-300/20 to-green-300/0',
     shine:
-      '205deg, transparent 0deg, hsl(280deg 95% 39%) 20deg, hsl(280deg 100% 85% / 0.3) 280deg',
-    border: 'purple-500/20',
-    color: 'rgb(244 63 94)',
+      '205deg, transparent 0deg, hsl(144deg 60% 70%) 20deg, hsl(144deg 60% 85% / 0.3) 280deg',
+    border: 'green-300/20',
+    color: 'rgb(134 239 172)',
   },
   amber: {
-    accent: 'amber-500',
-    gradient: 'from-amber-500/20 to-amber-500/0',
+    accent: 'green-400',
+    gradient: 'from-green-400/20 to-green-400/0',
     shine:
-      '205deg, transparent 0deg, hsl(40deg 95% 39%) 20deg, hsl(40deg 100% 85% / 0.3) 280deg',
-    border: 'amber-500/20',
-    color: 'rgb(244 63 94)',
+      '205deg, transparent 0deg, hsl(144deg 60% 60%) 20deg, hsl(144deg 60% 85% / 0.3) 280deg',
+    border: 'green-400/20',
+    color: 'rgb(74 222 128)',
   },
   rose: {
-    accent: 'rose-500',
-    gradient: 'from-rose-500/20 to-rose-500/0',
+    accent: 'green-300',
+    gradient: 'from-green-300/20 to-green-300/0',
     shine:
-      '205deg, transparent 0deg, hsl(340deg 95% 39%) 20deg, hsl(340deg 100% 85% / 0.3) 280deg',
-    border: 'rose-500/20',
-    color: 'rgb(244 63 94)',
+      '205deg, transparent 0deg, hsl(144deg 60% 70%) 20deg, hsl(144deg 60% 85% / 0.3) 280deg',
+    border: 'green-300/20',
+    color: 'rgb(134 239 172)',
   },
 };
 
@@ -103,12 +104,12 @@ export function CardHoverEffect({
       className={cn(
         'group relative z-30 w-full cursor-pointer overflow-hidden rounded-2xl',
         sizeConfig.padding,
-        // Light mode styles
-        'before:bg-linear-to-b bg-white/80 before:from-white/5 before:to-white/20 before:backdrop-blur-3xl',
+        // Set background to green-950 and text to white
+        'bg-green-950 text-white',
+        // Remove old bg-white/80 and dark:bg-black/5
+        // Light/dark mode overlays (optional, can be removed if not needed)
+        'before:bg-linear-to-b before:from-white/5 before:to-white/20 before:backdrop-blur-3xl',
         'after:bg-linear-to-b after:from-transparent after:via-transparent after:to-white/20',
-        // Dark mode styles
-        'dark:before:bg-linear-to-b dark:bg-black/5 dark:before:from-black/5 dark:before:to-black/20',
-        'dark:after:to-black/20',
         // Common styles
         "before:absolute before:inset-0 before:rounded-[inherit] before:content-['']",
         "after:absolute after:inset-0 after:rounded-[inherit] after:content-['']",
@@ -116,8 +117,6 @@ export function CardHoverEffect({
         // Shadows
         'shadow-[0px_3px_8px_rgba(0,0,0,0.04),0px_12px_20px_rgba(0,0,0,0.08)]',
         'hover:shadow-[0px_5px_15px_rgba(0,0,0,0.03),0px_25px_35px_rgba(0,0,0,0.2)]',
-        'dark:shadow-[0px_3px_8px_rgba(0,0,0,0.08),0px_12px_20px_rgba(0,0,0,0.15)]',
-        'dark:hover:shadow-[0px_5px_15px_rgba(0,0,0,0.06),0px_25px_35px_rgba(0,0,0,0.4)]',
         className,
       )}
       style={
@@ -175,8 +174,7 @@ export function CardHoverEffect({
         <h3
           className={cn(
             'font-medium transition-colors duration-300',
-            'text-black/80 group-hover:text-[var(--card-color)]',
-            'dark:text-white/80',
+            'text-white group-hover:text-[var(--card-color)]',
             sizeConfig.titleSize,
           )}
         >
@@ -185,8 +183,7 @@ export function CardHoverEffect({
         <p
           className={cn(
             'mt-1 transition-colors duration-300',
-            'text-black/60',
-            'dark:text-white/40',
+            'text-white/80',
             sizeConfig.descSize,
           )}
         >
