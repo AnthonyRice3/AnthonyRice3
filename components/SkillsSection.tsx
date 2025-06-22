@@ -13,9 +13,9 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
-import SkillsMarquee from "./SkillsMarquee";
 import { Spotlight } from "./ui/spotlight";
-
+import SkillsCards from "./SkillsCards";
+import { HonorableMentions } from "./HonorableMentions";
 
 export function SkillsSection() {
   return (
@@ -77,67 +77,70 @@ export function SkillsSection() {
           </div>
         </motion.div> */}
       </div>  
-      <SkillsMarquee />     
+      <SkillsCards />
+      <h1 className="text-center text-white text-2xl py-8">My Favorite Tools</h1>
     <BentoGrid className="w-screen mx-auto">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
           title={item.title}
           description={item.description}
-          header={item.header}
+          img={item.img}
           icon={item.icon}
           className={i === 3 || i === 6 ? "md:col-span-2" : ""}
         />
       ))}
     </BentoGrid>
+    <div className="py-12">
+      <h1 className="text-white text-2xl text-center py-8">Honorable Mentions</h1>
+      <HonorableMentions />
+    </div>
     </section>
   );
 }
-const Skeleton = () => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
-);
+
 const items = [
   {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
-    header: <Skeleton />,
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+    title: "Wire Shark",
+    description: "Network protocol analyzer for capturing and inspecting traffic to identify suspicious patterns or intrusions.",
+    img: "/WireShark.png",
+    icon: <IconClipboardCopy className="h-4 w-4 text-white" />,
   },
   {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
-    header: <Skeleton />,
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    title: "Splunk",
+    description: "A popular SIEM platform used for log aggregation, threat detection, alerting, and compliance.",
+    img: "/Splunk.png",
+    icon: <IconFileBroken className="h-4 w-4 text-white" />,
   },
   {
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
-    header: <Skeleton />,
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+    title: "AWS Security Hub / CloudTrail",
+    description: "Cloud-native tools for auditing changes, monitoring activity, and enforcing security policies in AWS.",
+    img: "/Aws.png",
+    icon: <IconSignature className="h-4 w-4 text-white" />,
   },
   {
-    title: "The Power of Communication",
+    title: "Github",
     description:
-      "Understand the impact of effective communication in our lives.",
-    header: <Skeleton />,
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+      "A cloud-based platform for version control and collaboration using Git. I use GitHub to manage codebases, contribute to open-source projects, and collaborate efficiently with teams through branching, pull requests, and CI integrations",
+    img: "/Github.png",
+    icon: <IconTableColumn className="h-4 w-4 text-white" />,
   },
   {
-    title: "The Pursuit of Knowledge",
-    description: "Join the quest for understanding and enlightenment.",
-    header: <Skeleton />,
-    icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
+    title: "Metasploit Framework",
+    description: "Penetration testing framework for exploit development, testing vulnerabilities, and simulating attacks.",
+    img: "/Metasploit.png",
+    icon: <IconArrowWaveRightUp className="h-4 w-4 text-white" />,
   },
   {
-    title: "The Joy of Creation",
-    description: "Experience the thrill of bringing ideas to life.",
-    header: <Skeleton />,
-    icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
+    title: "Operating Systems I Use",
+    description: "Operating systems manage hardware, run applications, and allow users to interact with computers through an organized software environment. These are the ones I'm most familiar with.",
+    img: "/Opsystem.png",
+    icon: <IconBoxAlignTopLeft className="h-4 w-4 text-white" />,
   },
   {
-    title: "The Spirit of Adventure",
-    description: "Embark on exciting journeys and thrilling discoveries.",
-    header: <Skeleton />,
-    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+    title: "Adobe Suite",
+    description: "A suite of industry-leading creative tools used for design, video editing, digital art, and multimedia production. I use Adobe software (Photoshop, Illustrator, Premiere Pro) to create high-quality visual assets and streamline content workflows.",
+    img: "/Adobe.png",
+    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-white" />,
   },
 ];

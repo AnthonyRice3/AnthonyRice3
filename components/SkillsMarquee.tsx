@@ -8,36 +8,36 @@ import Image from 'next/image';
 
 const features = [
   {
-    step: 'Step 1',
-    title: 'Build Faster',
+    step: 'Full Stack',
+    title: 'Full Stack',
     content:
-      'Create your MVP in record time with our pre-built blocks and components.',
+      'Custom-built applications with both front-end and back-end functionality, optimized for performance, scalability, and user experience across devices.',
     icon: <Rocket className="h-6 w-6 text-green-300" />,
-    image: '/',
+    image: '/site1.PNG',
   },
   {
-    step: 'Step 2',
-    title: 'Customize Easily',
+    step: 'E-Commerce',
+    title: 'E-Commerce',
     content:
-      'Tailor every component to your needs with our intuitive design system and flexible architecture.',
+      'Secure, conversion-focused online stores with integrated payment systems, product management, and mobile-friendly shopping experiences.',
     icon: <Paintbrush className="h-6 w-6 text-green-300" />,
-    image: '/',
+    image: '/site4.PNG',
   },
   {
-    step: 'Step 3',
-    title: 'Deploy Confidently',
+    step: 'Decentralized Application',
+    title: 'Decentralized Application',
     content:
-      'Launch your product with confidence using our optimized, responsive, and accessible components.',
+      'Blockchain-powered apps with smart contracts, crypto wallets, and trustless functionality for DeFi, NFTs, or DAO platforms.',
     icon: <Code className="h-6 w-6 text-green-300" />,
-    image: '/',
+    image: '/site14.PNG',
   },
   {
-    step: 'Step 4',
-    title: 'Add Yours!',
+    step: 'Artist Portfolio',
+    title: 'Artist Portfolio',
     content:
-      'Contribute your own blocks and become part of the MVPBlocks community.',
+      'Engaging portfolios for actors, dancers, and musicians, integrating reels, bios, and booking/contact features for talent outreach.',
     icon: <Code className="h-6 w-6 text-green-300" />,
-    image: '/',
+    image: '/site10.PNG',
   },
 ];
 
@@ -64,11 +64,10 @@ export default function SkillsMarquee() {
         <div className="relative mx-auto mb-12 max-w-2xl sm:text-center">
           <div className="relative z-10">
             <h2 className="font-geist text-3xl font-bold tracking-tighter md:text-4xl lg:text-5xl text-green-300">
-              Build Your MVP in Three Steps
+              After 5+ Years, I&lsquo;ve Done It All
             </h2>
             <p className="font-geist mt-3 text-green-100/80">
-              MVPBlocks helps you create, customize, and deploy your product
-              faster than ever before.
+              From full-stack platforms to artist portfolios, I design and develop tailored websites that blend functionality, creativity, and purpose — built to meet the unique needs of each client and industry.
             </p>
           </div>
           <div

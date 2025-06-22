@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Link from "next/link";
 import { Timeline } from './Timeline';
 import { Spotlight } from './ui/spotlight';
-import Labs from './Labs';
+import SkillsMarquee from './SkillsMarquee';
 
 export default function ProjectSection () {
 
@@ -21,7 +21,7 @@ export default function ProjectSection () {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.8, ease: 'easeOut' }}
                     >
-                      <span className="mb-6 inline-block rounded-full text-white border border-green-300/30 px-3 py-1 text-xs">
+                      <span className="my-8 inline-block rounded-full text-white border border-green-300/30 px-3 py-1 text-xs">
                                 Procjects & Labs
                             </span>
                             <h1 className="mx-auto mb-6 max-w-4xl text-4xl font-light md:text-5xl lg:text-7xl text-white">
@@ -42,7 +42,7 @@ export default function ProjectSection () {
                       </div>
                     </motion.div>
                   </div>
-                  <Labs />
+                  <SkillsMarquee />
                   <Timeline />
         </section>
     )

@@ -32,7 +32,7 @@ export function ExperienceSidebar() {
     },
     {
       label: "Experience / Education",
-      href: "#",
+      href: "/Resume/Experience#Experience",
       icon: (
         <IconSettings className="h-5 w-5 shrink-0 text-green-200 dark:text-neutral-200" />
       ),

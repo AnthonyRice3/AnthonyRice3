@@ -20,25 +20,25 @@ type FeatureItem = {
 const leftFeatures: FeatureItem[] = [
   {
     icon: Building2,
-    title: 'Taught by Professionals',
+    title: 'DevSecOps (SAST, DAST & SCA)',
     description:
-      'I have learned directly from top engineers and founders with real-world experience.',
+      'I embed automated security checks into development pipelines, catching vulnerabilities early in the lifecycle.',
     position: 'left',
     cornerStyle: 'sm:translate-x-4 sm:rounded-br-[2px]',
   },
   {
     icon: User2,
-    title: 'Team-Based Collaboration',
+    title: 'Web Technologies (HTML, CSS, JavaScript, React, Node.js)',
     description:
-      'I have worked effeciently and effectively with all walks of life. Team work Makes the Dream Work!',
+      'I build responsive, interactive web interfaces and backends, balancing performance, usability, and secure architecture.',
     position: 'left',
     cornerStyle: 'sm:-translate-x-4 sm:rounded-br-[2px]',
   },
   {
     icon: Trophy,
-    title: 'YouTube University',
+    title: 'API Security (RESTful, OAuth2, JWT)',
     description:
-      'Although I highly value professional schooling, I take pride in self enhancement',
+      'I implement secure authentication and authorization protocols to protect data exchanged across application endpoints.',
     position: 'left',
     cornerStyle: 'sm:translate-x-4 sm:rounded-tr-[2px]',
   },
@@ -47,25 +47,25 @@ const leftFeatures: FeatureItem[] = [
 const rightFeatures: FeatureItem[] = [
   {
     icon: ScreenShare,
-    title: 'Revision Classes',
+    title: 'SDLC Models (CI/CD, Spiral & Agile)',
     description:
-      'Always able to stay sharp joining  weekly revision sessions and topic refreshers.',
+      'I integrate security within agile workflows and CI/CD pipelines to ensure safe, continuous product delivery.',
     position: 'right',
     cornerStyle: 'sm:-translate-x-4 sm:rounded-bl-[2px]',
   },
   {
     icon: User,
-    title: 'Mentored',
+    title: 'Blockchain (Defi, DApps & Smart Contracts)',
     description:
-      'My skills were nutured by my mentors and batchmates on projects and labs. This was important in my growth',
+      'I architect and develop decentralized applications, leveraging smart contracts to enable secure, transparent, permissionless financial systems.',
     position: 'right',
     cornerStyle: 'sm:translate-x-4 sm:rounded-bl-[2px]',
   },
   {
     icon: Lightbulb,
-    title: 'Capstone Project',
+    title: ' Audio & Video Production (IPTV)',
     description:
-      'I have completed a Capstone project simulating real world penetration testing',
+      'I design and deploy secure, high-quality multimedia content systems for broadcast, streaming, and post-production workflows.',
     position: 'right',
     cornerStyle: 'sm:-translate-x-4 sm:rounded-tl-[2px]',
   },
@@ -98,7 +98,7 @@ const FeatureCard = ({ feature }: { feature: FeatureItem }) => {
   );
 };
 
-export default function Labs() {
+export default function SkillsCards() {
   return (
     <section className="pb-8 pt-20" id="features">
       <div className="mx-6 max-w-[1120px] pb-16 pt-2 max-[300px]:mx-4 min-[1150px]:mx-auto">
@@ -117,7 +117,7 @@ export default function Labs() {
               Keys to My Success
             </h2>
             <p className="mx-auto max-w-[18rem] text-pretty text-center text-green-300/70">
-              Just a few things I accredit to how I got here in my career <span className='text-white'>!</span>
+              Practical Skills in Action: <span className='text-white'> How I Apply My Technical Expertise!</span>
             </p>
           </div>
 
