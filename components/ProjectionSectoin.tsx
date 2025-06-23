@@ -6,28 +6,9 @@ import { Timeline } from './Timeline';
 import { Spotlight } from './ui/spotlight';
 import SkillsMarquee from './SkillsMarquee';
 
-
-const colors = {
-  50: "#365314",
-  100: "#365314",
-  200: "#BBF7D0",
-  300: "#365314",
-  400: "#365314",
-  500: "#365314",
-  600: "#365314",
-  700: "#365314",
-  800: "#365314",
-  900: "#365314",
-};
-
-const svgStyle = {
-    transform: `translateY(${scrollY * 0.15}px)`,
-    transition: "transform 0.1s linear",
-  };
 export default function ProjectSection () {
 
     return(
-      
       
         <section id="Projects">
           <Spotlight
@@ -35,74 +16,7 @@ export default function ProjectSection () {
                           gradientSecond="radial-gradient(50% 50% at 50% 50%, #36531420 0, #86EFAC10 80%, transparent 100%)"
                           gradientThird="radial-gradient(50% 50% at 50% 50%, #36531420 0, #86EFAC10 80%, transparent 100%)"
                       />
-                      <svg
-        className="nset-0 w-full h-full"
-        style={svgStyle}
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <defs>
-          <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
-            <path
-              d="M 60 0 L 0 0 0 60"
-              fill="none"
-              stroke="rgba(200,180,160,0.08)"
-              strokeWidth="0.5"
-            />
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#grid)" />
-        <line x1="0" y1="20%" x2="100%" y2="20%" className="grid-line" style={{ animationDelay: "0.5s" }} />
-        <line x1="0" y1="80%" x2="100%" y2="80%" className="grid-line" style={{ animationDelay: "1s" }} />
-        <line x1="20%" y1="0" x2="20%" y2="100%" className="grid-line" style={{ animationDelay: "1.5s" }} />
-        <line x1="80%" y1="0" x2="80%" y2="100%" className="grid-line" style={{ animationDelay: "2s" }} />
-        <line
-          x1="50%"
-          y1="0"
-          x2="50%"
-          y2="100%"
-          className="grid-line"
-          style={{ animationDelay: "2.5s", opacity: 0.05 }}
-        />
-        <line
-          x1="0"
-          y1="50%"
-          x2="100%"
-          y2="50%"
-          className="grid-line"
-          style={{ animationDelay: "3s", opacity: 0.05 }}
-        />
-        <circle cx="20%" cy="20%" r="2" className="detail-dot" style={{ animationDelay: "3s" }} />
-        <circle cx="80%" cy="20%" r="2" className="detail-dot" style={{ animationDelay: "3.2s" }} />
-        <circle cx="20%" cy="80%" r="2" className="detail-dot" style={{ animationDelay: "3.4s" }} />
-        <circle cx="80%" cy="80%" r="2" className="detail-dot" style={{ animationDelay: "3.6s" }} />
-        <circle cx="50%" cy="50%" r="1.5" className="detail-dot" style={{ animationDelay: "4s" }} />
-      </svg>
-
-      {/* Corner elements */}
-      <div className="corner-element top-8 left-8" style={{ animationDelay: "4s" }}>
-        <div
-          className="absolute top-0 left-0 w-2 h-2 opacity-30"
-          style={{ background: colors[200] }}
-        ></div>
-      </div>
-      <div className="corner-element top-8 right-8" style={{ animationDelay: "4.2s" }}>
-        <div
-          className="absolute top-0 right-0 w-2 h-2 opacity-30"
-          style={{ background: colors[200] }}
-        ></div>
-      </div>
-      <div className="corner-element bottom-8 left-8" style={{ animationDelay: "4.4s" }}>
-        <div
-          className="absolute bottom-0 left-0 w-2 h-2 opacity-30"
-          style={{ background: colors[200] }}
-        ></div>
-      </div>
-      <div className="corner-element bottom-8 right-8" style={{ animationDelay: "4.6s" }}>
-        <div
-          className="absolute bottom-0 right-0 w-2 h-2 opacity-30"
-          style={{ background: colors[200] }}
-        ></div>
-      </div>
+                      
             <div className="container text-center relative z-10 px-4  md:max-w-4xl md:px-6 lg:max-w-7xl">
                     <motion.div
                       initial={{ opacity: 0, y: 20 }}
