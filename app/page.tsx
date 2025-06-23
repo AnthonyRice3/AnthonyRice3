@@ -5,7 +5,7 @@ import FeatureSection from "@/components/FeatureSection";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
-import { Process } from "@/components/Process";
+import { ProjectsSidebar } from "@/components/ProjectSidebar";
 
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
       <Hero />
       <AR3 /> 
       <FeatureSection />
-      <Process />
+      <ProjectsSidebar />
       <Footer />
       <div className="absolute -top-20 -left-20 w-72 h-72 bg-lime-900 rounded-full opacity-20 blur-3xl"></div>
       <div className="absolute -bottom-150 -right-20 w-72 h-72 bg-green-300 rounded-full opacity-20 blur-3xl"></div>

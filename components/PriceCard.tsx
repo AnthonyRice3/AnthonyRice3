@@ -44,10 +44,10 @@ export default function PriceCard() {
  
             <div className="mb-8">
               <div className="flex items-end gap-2 mb-2">
-                <span className="text-4xl lg:text-5xl font-bold tracking-tight">$79</span>
-                <span className="text-neutral-500 mb-1">/month</span>
+                <span className="text-4xl lg:text-5xl font-bold tracking-tight">$150</span>
+                
               </div>
-              <p className="text-xs text-neutral-500">Billed monthly • Cancel anytime</p>
+              
             </div>
  
             <div className="flex flex-col gap-3 mb-8">
@@ -64,19 +64,23 @@ export default function PriceCard() {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-lucide="check-circle" className="lucide lucide-check-circle w-4 h-4 mt-0.5 text-lime-900 flex-shrink-0"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>
-                <span className=""><strong>Brand Identity</strong> - Logo, colors, typography</span>
+                <span className=""><strong>Custom One-Page Design</strong> - Sleek, responsive landing page tailored to your brand or niche.</span>
               </li>
               <li className="flex items-start gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-lucide="check-circle" className="lucide lucide-check-circle w-4 h-4 mt-0.5 text-lime-900 flex-shrink-0"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>
-                <span className=""><strong>Website</strong> - 5 pages, mobile-optimized</span>
+                <span className=""><strong>Social Media Integration</strong> - Embedded links, feeds, and sharing buttons to grow your online presence.</span>
               </li>
               <li className="flex items-start gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-lucide="check-circle" className="lucide lucide-check-circle w-4 h-4 mt-0.5 text-lime-900 flex-shrink-0"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>
-                <span className=""><strong>Social Media Kit</strong> - 10 custom templates</span>
+                <span className=""><strong>Basic SEO Optimization</strong> - Optimized metadata and structure to help your site rank on Google.</span>
               </li>
               <li className="flex items-start gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-lucide="check-circle" className="lucide lucide-check-circle w-4 h-4 mt-0.5 text-lime-900 flex-shrink-0"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>
-                <span><strong>Email Support</strong> - Response within 24 hours</span>
+                <span><strong>Mobile-First Performance</strong> - Fully optimized for fast mobile browsing and engagement.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-lucide="check-circle" className="lucide lucide-check-circle w-4 h-4 mt-0.5 text-lime-900 flex-shrink-0"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>
+                <span><strong>Contact Form Integration</strong> - Let visitors reach you via email.</span>
               </li>
             </ul>
           </article>
@@ -104,10 +108,10 @@ export default function PriceCard() {
  
             <div className="mb-8">
               <div className="flex items-end gap-2 mb-2">
-                <span className="text-4xl lg:text-5xl font-bold tracking-tight">$199</span>
+                <span className="text-4xl lg:text-5xl font-bold tracking-tight">$350</span>
                 <span className="text-neutral-400 mb-1">/month</span>
               </div>
-              <p className="text-xs text-neutral-400">Billed monthly • 2 months free yearly</p>
+              {/* <p className="text-xs text-neutral-400">Billed monthly • 2 months free yearly</p> */}
             </div>
  
             <div className="flex flex-col gap-3 mb-8">
@@ -124,7 +128,9 @@ export default function PriceCard() {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-lucide="check-circle" className="lucide lucide-check-circle w-4 h-4 mt-0.5 text-lime-900 flex-shrink-0"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>
-                <span className=""><strong>Brand Strategy</strong> - Market research &amp; positioning</span>
+                <span className=""><strong>Multi-Page Custom Website</strong> - Professional, scalable site with pages for services, about, and contact.
+
+</span>
               </li>
               <li className="flex items-start gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-lucide="check-circle" className="lucide lucide-check-circle w-4 h-4 mt-0.5 text-lime-900 flex-shrink-0"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>
@@ -132,15 +138,15 @@ export default function PriceCard() {
               </li>
               <li className="flex items-start gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-lucide="check-circle" className="lucide lucide-check-circle w-4 h-4 mt-0.5 text-lime-900 flex-shrink-0"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>
-                <span><strong>UI/UX Design</strong> - App or web application</span>
+                <span><strong>Analytics + Tracking Setup</strong> - Vercel Analytics and conversion tracking to measure performance</span>
               </li>
               <li className="flex items-start gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-lucide="check-circle" className="lucide lucide-check-circle w-4 h-4 mt-0.5 text-lime-900 flex-shrink-0"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>
-                <span><strong>Marketing Materials</strong> - Brochures, presentations</span>
+                <span><strong>Custom Domain & Branding</strong> - Branded experience with your domain, logos, and colors.</span>
               </li>
               <li className="flex items-start gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-lucide="check-circle" className="lucide lucide-check-circle w-4 h-4 mt-0.5 text-lime-900 flex-shrink-0"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>
-                <span><strong>Priority Support</strong> - Slack + video calls</span>
+                <span><strong>Mobile-First UI & Speed Optimization </strong> - Fully responsive and performance-tuned.</span>
               </li>
             </ul>
           </article>
@@ -157,17 +163,17 @@ export default function PriceCard() {
             </div>
  
             <div className="mb-8">
-              <h2 className="lg:text-2xl leading-tight text-2xl font-medium mb-3">Large Teams</h2>
+              <h2 className="lg:text-2xl leading-tight text-2xl font-medium mb-3">Enterprise</h2>
               <p className="text-sm text-neutral-600">
-                Dedicated design team with unlimited creative capacity
+                For established companies needing high-performance web infrastructure.
               </p>
             </div>
  
             <div className="mb-8">
               <div className="flex items-end gap-2 mb-2">
-                <span className="text-4xl lg:text-5xl font-bold tracking-tight text-black">Custom</span>
+                <span className="text-4xl lg:text-5xl font-bold tracking-tight text-black">$550</span>
               </div>
-              <p className="text-xs text-neutral-500">Tailored pricing based on your needs</p>
+              
             </div>
  
             <div className="flex flex-col gap-3 mb-8">
@@ -184,19 +190,19 @@ export default function PriceCard() {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-lucide="check-circle" className="lucide lucide-check-circle w-4 h-4 mt-0.5 text-lime-900 flex-shrink-0"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>
-                <span><strong>Dedicated Team</strong> - 3-5 senior designers</span>
+                <span><strong>Custom Web App or Platform</strong> - Tailored solutions with advanced UI/UX and backend logic.</span>
               </li>
               <li className="flex items-start gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-lucide="check-circle" className="lucide lucide-check-circle w-4 h-4 mt-0.5 text-lime-900 flex-shrink-0"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>
-                <span><strong>Enterprise System</strong> - Multi-brand management</span>
+                <span><strong>Authentication & User Management</strong> - Secure login systems (e.g. Clerk, Auth0) with roles and permissions.</span>
               </li>
               <li className="flex items-start gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-lucide="check-circle" className="lucide lucide-check-circle w-4 h-4 mt-0.5 text-lime-900 flex-shrink-0"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>
-                <span><strong>White-label Solutions</strong> - Custom portals</span>
+                <span><strong>Scalable Architecture (SSR, CDN, CI/CD)</strong> - Built with modern stacks (Next.js, Vercel, AWS) for speed and growth.</span>
               </li>
               <li className="flex items-start gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-lucide="check-circle" className="lucide lucide-check-circle w-4 h-4 mt-0.5 text-lime-900 flex-shrink-0"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>
-                <span><strong>24/7 Support</strong> - Dedicated account manager</span>
+                <span><strong>AI + Web3 Capabilities (Optional)</strong> - AI chatbots, blockchain wallet support, or NFT tools.</span>
               </li>
             </ul>
           </article>
@@ -204,7 +210,7 @@ export default function PriceCard() {
         </div>
  
         <div className="mt-16 sm:mt-20 text-center">
-          <p className="text-sm text-neutral-500 mb-8">Trusted by 2,500+ creative professionals worldwide</p>
+          <p className="text-sm text-neutral-500 mb-8"></p>
           <div className="flex items-center justify-center gap-8 opacity-60">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-lucide="shield-check" className="lucide lucide-shield-check w-6 h-6"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
             <span className="text-sm">SSL Secured</span>
@@ -213,7 +219,7 @@ export default function PriceCard() {
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-lucide="refresh-cw" className="lucide lucide-refresh-cw w-6 h-6"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path><path d="M8 16H3v5"></path></svg>
             <span className="text-sm">Cancel Anytime</span>
           </div>
-        </div>strokeWidth
+        </div>
       </section>
     </div>
   )

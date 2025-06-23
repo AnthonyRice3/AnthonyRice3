@@ -19,7 +19,7 @@ const navItems: NavItem[] = [
   { name: 'Services', href: '/Pricing' },
   {
     name: 'Resume',
-    href: '/Resume',
+    href: '/Resume#',
     hasDropdown: true,
     dropdownItems: [
       {
