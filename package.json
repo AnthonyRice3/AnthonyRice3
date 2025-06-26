@@ -13,6 +13,7 @@
     "@stripe/stripe-js": "^7.3.1",
     "@supabase/supabase-js": "^2.50.0",
     "@tabler/icons-react": "^3.34.0",
+    "aws-amplify": "^6.15.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.18.1",
@@ -26,16 +27,22 @@
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
+    "@aws-amplify/backend": "^1.16.1",
+    "@aws-amplify/backend-cli": "^1.8.0",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19.1.7",
     "@types/react-dom": "^19.1.6",
     "@types/stripe": "^8.0.416",
+    "aws-cdk-lib": "^2.189.1",
+    "constructs": "^10.4.2",
+    "esbuild": "^0.25.5",
     "eslint": "^9",
     "eslint-config-next": "15.3.3",
     "tailwindcss": "^4",
+    "tsx": "^4.20.3",
     "tw-animate-css": "^1.3.4",
-    "typescript": "^5"
+    "typescript": "^5.8.3"
   }
 }
