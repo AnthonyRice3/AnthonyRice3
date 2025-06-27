@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 
 export default function AR3 () {
@@ -16,10 +18,10 @@ export default function AR3 () {
                             AR3: Your Partner in High-Performance Web Development
                         </h1>
                         <p className="mt-3 text-white">
-                            At AR3, we specialize in crafting high-performance websites that merge cutting-edge design with seamless functionality. Whether you&apos;re a startup, an established brand, or an independent creator, our mission is to transform your vision into a digital experience that captivates, converts, and scales. With a strong foundation in modern web technologies and a deep understanding of UX/UI best practices, we bring more than just code — we bring clarity, strategy, and polish to every project.
+                            I we specialize in crafting high-performance websites that merge cutting-edge design with seamless functionality. Whether you&apos;re a startup, an established brand, or an independent creator, our mission is to transform your vision into a digital experience that captivates, converts, and scales. With a strong foundation in modern web technologies and a deep understanding of UX/UI best practices, I bring more than just code — I bring clarity, strategy, and polish to every project.
                         </p>
                         <p className="mt-3 text-white">
-                            Founded on a passion for clean design and performance-first development, AR3 blends creative artistry with technical expertise. Our process is collaborative and transparent, ensuring that your goals remain at the center of every decision. From simple landing pages to complex, e-commerce-ready platforms, we’re here to make sure your web presence works as hard as you do.
+                            Founded on a passion for clean design and performance-first development, AR3 blends creative artistry with technical expertise. My process is collaborative and transparent, ensuring that your goals remain at the center of every decision. From simple landing pages to complex, e-commerce-ready platforms, I’m here to make sure your web presence works as hard as you do.
                         </p>
                         {/* <a href="/Pricing" className="inline-flex gap-x-1 items-center text-[#22240c] hover:text-green-600 duration-150 font-medium">
                             Learn more

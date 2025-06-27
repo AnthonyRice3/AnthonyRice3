@@ -27,7 +27,7 @@ export default function RHero () {
                     <p className="text-gray-500 leading-relaxed my-4">
                         If you are a potential employer, recruiter, or just someone who wants to understand my skills and experience, you can download my resume below. It contains detailed information about my professional background, technical skills, and accomplishments. I hope it gives you a good overview of what I can bring to the table.
                     </p>
-                    <Link href={"/Resume.pdf"} target="_blank" rel="noopener noreferrer" download={"Resume.pdf"}>
+                    <Link href={"/AR3Resume.pdf"} target="_blank" rel="noopener noreferrer" download={"Resume.pdf"}>
                         <InteractiveHoverButton className="hover:bg-green-300">My Resume</InteractiveHoverButton>
                     </Link>
                 </div>

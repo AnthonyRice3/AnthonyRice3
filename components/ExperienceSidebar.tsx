@@ -9,7 +9,6 @@ import {
 } from "@tabler/icons-react";
 
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 import { ExperienceSection } from "./ExperienceSection";
 
 
@@ -63,23 +62,7 @@ export function ExperienceSidebar() {
               ))}
             </div>
           </div>
-          <div>
-            <SidebarLink
-              link={{
-                label: "Anthony R.",
-                href: "#",
-                icon: (
-                  <Image
-                    src="/ar3logo.png"
-                    className="h-7 w-7 shrink-0 rounded-full"
-                    width={50}
-                    height={50}
-                    alt="Avatar"
-                  />
-                ),
-              }}
-            />
-          </div>
+          
         </SidebarBody>
       </Sidebar>
       <div>

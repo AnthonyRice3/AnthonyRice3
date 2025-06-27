@@ -98,7 +98,7 @@ export default function Nav() {
         boxShadow: isScrolled ? '0 8px 32px rgba(0, 0, 0, 0.1)' : 'none',
       }}
     >
-      <div className="mx-auto px-4 sm:px-6 lg:px-8 z-50">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8 z-50 bg-black">
         <div className="flex h-16 items-center justify-between lg:h-20">
           <motion.div
             className="flex items-center space-x-2"
