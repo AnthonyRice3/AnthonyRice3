@@ -107,10 +107,13 @@ export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
       <h1 className="text-2xl md:text-7xl font-bold text-white">
-        I Have Done a Ton of Sites <br /> & So Many Styles
+        Build Your Future,<br /> Pixel by Pixel
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 text-neutral-200">
-        Have me personally build a beautiful website for you with the latest technologies and frameworks.
+        Your website is more than a digital presence — it&lsquo;s your first impression, your storefront, your platform for growth. Whether you&lsquo;re an individual creator, a growing business, or an enterprise powerhouse, we craft high-performance websites tailored to your vision.
+        Choose a service plan that fits your needs and let us bring your brand to life with clean code, beautiful design, and powerful functionality.
+
+
         
       </p>
     </div>

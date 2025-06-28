@@ -2,6 +2,7 @@
  
 import { Instrument_Serif } from 'next/font/google';
 import { cn } from '@/lib/utils';
+import Link from 'next/link';
  
 const serif = Instrument_Serif({
   subsets: ['latin'],
@@ -45,18 +46,18 @@ export default function PriceCard() {
             <div className="mb-8">
               <div className="flex items-end gap-2 mb-2">
                 <span className="text-4xl lg:text-5xl font-bold tracking-tight">$150</span>
-                
+                <span className="text-neutral-400 mb-1">.00</span>
               </div>
               
             </div>
  
             <div className="flex flex-col gap-3 mb-8">
-              <button className="w-full rounded-full bg-lime-900 text-white px-6 py-3 text-sm font-semibold hover:bg-red-600 transition-all duration-200">
-                Start Creating
-              </button>
-              <button className="w-full rounded-full border-2 border-black text-black px-6 py-3 text-sm font-medium hover:bg-black hover:text-white transition-all duration-200">
+              <Link href="https://buy.stripe.com/fZu7sKdvYbfVcpSgfG24004" className="w-full rounded-full bg-lime-900 text-white px-6 py-3 text-sm font-semibold hover:bg-red-600 transition-all duration-200">
+                Let&lsquo;s Get Started
+              </Link>
+              {/* <Link href="" className="w-full rounded-full border-2 border-black text-black px-6 py-3 text-sm font-medium hover:bg-black hover:text-white transition-all duration-200">
                 Learn More
-              </button>
+              </Link> */}
             </div>
  
             <hr className="border-neutral-200 mb-8" />
@@ -68,7 +69,7 @@ export default function PriceCard() {
               </li>
               <li className="flex items-start gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-lucide="check-circle" className="lucide lucide-check-circle w-4 h-4 mt-0.5 text-lime-900 flex-shrink-0"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>
-                <span className=""><strong>Social Media Integration</strong> - Embedded links, feeds, and sharing buttons to grow your online presence.</span>
+                <span className=""><strong>Social Media Integration</strong> - Embedded links, feeds, and sharing Links to grow your online presence.</span>
               </li>
               <li className="flex items-start gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-lucide="check-circle" className="lucide lucide-check-circle w-4 h-4 mt-0.5 text-lime-900 flex-shrink-0"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>
@@ -109,18 +110,16 @@ export default function PriceCard() {
             <div className="mb-8">
               <div className="flex items-end gap-2 mb-2">
                 <span className="text-4xl lg:text-5xl font-bold tracking-tight">$350</span>
-                <span className="text-neutral-400 mb-1">/month</span>
+                <span className="text-neutral-400 mb-1">.00</span>
               </div>
               {/* <p className="text-xs text-neutral-400">Billed monthly • 2 months free yearly</p> */}
             </div>
  
             <div className="flex flex-col gap-3 mb-8">
-              <button className="w-full rounded-full bg-white text-black px-6 py-3 text-sm font-semibold hover:bg-neutral-100 transition-all duration-200">
-                Scale Your Brand
-              </button>
-              <button className="w-full rounded-full border-2 border-white text-white px-6 py-3 text-sm font-medium hover:bg-white hover:text-black transition-all duration-200">
-                Book Demo
-              </button>
+              <Link href="https://buy.stripe.com/3cI14m8bEabRahKe7y24005" className="w-full rounded-full bg-white text-black px-6 py-3 text-sm font-semibold hover:bg-neutral-100 transition-all duration-200">
+                Let&lsquo;s Get Started
+              </Link>
+              
             </div>
  
             <hr className="border-neutral-700 mb-8" />
@@ -171,18 +170,17 @@ export default function PriceCard() {
  
             <div className="mb-8">
               <div className="flex items-end gap-2 mb-2">
-                <span className="text-4xl lg:text-5xl font-bold tracking-tight text-black">$550</span>
+                <span className="text-4xl lg:text-5xl font-bold tracking-tight text-black">$950</span>
+                <span className="text-neutral-400 mb-1">.00</span>
               </div>
               
             </div>
  
             <div className="flex flex-col gap-3 mb-8">
-              <button className="w-full rounded-full bg-black text-white px-6 py-3 text-sm font-semibold hover:bg-neutral-800 transition-all duration-200">
-                Get Custom Quote
-              </button>
-              <button className="w-full rounded-full border-2 border-black text-black px-6 py-3 text-sm font-medium hover:bg-black hover:text-white transition-all duration-200">
-                Enterprise Demo
-              </button>
+              <Link href="https://buy.stripe.com/8x2eVc4Zs97N9dG5B224006" className="w-full rounded-full bg-black text-white px-6 py-3 text-sm font-semibold hover:bg-neutral-800 transition-all duration-200">
+                Let&lsquo;s Get Started
+              </Link>
+              
             </div>
  
             <hr className="border-neutral-200 mb-8" />
