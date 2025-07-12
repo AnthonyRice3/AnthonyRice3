@@ -11,6 +11,8 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Image from "next/image";
 import { Sidebar, SidebarBody, SidebarLink } from "./ui/DashItems";
+import { FileUpload } from "./FileUpload";
+
 
 export function UserDashboard() {
   const links = [
@@ -48,7 +50,7 @@ export function UserDashboard() {
     <div
       className={cn(
         "mx-auto mt-16 flex w-full flex-1 flex-col overflow-hidden rounded-md border border-neutral-200 bg-gray-100 md:flex-row dark:border-neutral-700 dark:bg-neutral-800",
-        "h-screen", 
+        "h-full", 
       )}
     >
       <Sidebar open={open} setOpen={setOpen}>
@@ -68,7 +70,7 @@ export function UserDashboard() {
                 href: "#",
                 icon: (
                   <Image
-                    src="/ar3logotr.png"
+                    src="/ar3logotran.png"
                     className="h-7 w-7 shrink-0 rounded-full"
                     width={50}
                     height={50}
@@ -113,27 +115,11 @@ export const LogoIcon = () => {
 };
 
 // Dummy dashboard component with content
-const Dashboard = () => {
+export default function Dashboard() {
   return (
-    <div className="flex flex-1">
-      <div className="flex h-full w-full flex-1 flex-col gap-2 rounded-tl-2xl border border-neutral-200 bg-white p-2 md:p-10 dark:border-neutral-700 dark:bg-neutral-900">
-        <div className="flex gap-2">
-          {[...new Array(4)].map((i, idx) => (
-            <div
-              key={"first-array-demo-1" + idx}
-              className="h-20 w-full animate-pulse rounded-lg bg-gray-100 dark:bg-neutral-800"
-            ></div>
-          ))}
-        </div>
-        <div className="flex flex-1 gap-2">
-          {[...new Array(2)].map((i, idx) => (
-            <div
-              key={"second-array-demo-1" + idx}
-              className="h-full w-full animate-pulse rounded-lg bg-gray-100 dark:bg-neutral-800"
-            ></div>
-          ))}
-        </div>
-      </div>
+    <div className="flex-1 p-6">
+      <h1 className="text-center text-3xl ">hello world</h1>
+      <FileUpload />
     </div>
   );
-};
+}

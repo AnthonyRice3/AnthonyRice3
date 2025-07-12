@@ -42,7 +42,8 @@ const navItems: NavItem[] = [
       },
     ],
   },
-  { name: 'Contact', href: '/Contact' },
+  { name: 'Sign in', href: 'https://us-east-2fatwieqzi.auth.us-east-2.amazoncognito.com/login?client_id=64jga6d6ii8o0gohf8a3h0m81l&response_type=code&scope=email+openid+phone&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2FDashboard' },
+  { name: 'Sign Up', href: 'https://us-east-2fatwieqzi.auth.us-east-2.amazoncognito.com/login?client_id=64jga6d6ii8o0gohf8a3h0m81l&response_type=code&scope=email+openid+phone&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2FDashboard' },
   
 ];
  
@@ -130,7 +131,7 @@ export default function Nav() {
               >
                 <Link
                   href={item.href}
-                  className="flex items-center space-x-1 font-medium text-foreground transition-colors duration-200 text-white hover:text-green-200"
+                  className="flex items-center space-x-1 font-medium  transition-colors duration-200 text-white hover:text-green-200"
                 >
                   <span>{item.name}</span>
                   {item.hasDropdown && (
